@@ -4,4 +4,4 @@ A tool for [Kong](https://getkong.org/) to allow declarative configuration, base
 
 This fork adds performance improvements when dealing with a high amount of APIs and plugins, as well as reliability improvements.
 
-See the original [Kongfig](https://github.com/mybuilder/kongfig) documentation for detail.s
+See the original [Kongfig](https://github.com/mybuilder/kongfig) documentation for details.
