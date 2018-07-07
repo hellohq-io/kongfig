@@ -1,6 +1,6 @@
 {
-  "name": "kongfig",
-  "version": "1.5.3",
+  "name": "qongfig",
+  "version": "1.0.0",
   "description": "A tool for Kong to allow declarative configuration.",
   "repository": "https://github.com/mybuilder/kongfig",
   "bin": {
@@ -16,7 +16,7 @@
     "postversion": "git push && git push --tags",
     "publish-patch": "npm version patch && npm publish"
   },
-  "author": "MyBuilder Ltd",
+  "author": "HQLabs GmbH",
   "license": "MIT",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
