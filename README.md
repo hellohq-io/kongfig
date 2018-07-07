@@ -2,9 +2,9 @@
     <img src="logo.png">
 </p>
 
-# Kongfig
+# Qongfig
 
-A tool for [Kong](https://getkong.org/) to allow declarative configuration.
+A tool for [Kong](https://getkong.org/) based on [Kongfig](https://github.com/mybuilder/kongfig) to allow declarative configuration.
 
 Simply define your list of APIs and consumers in json and then run kongfig to ensure that your Kong is configured correctly.
 
@@ -13,10 +13,10 @@ Simply define your list of APIs and consumers in json and then run kongfig to en
 ## Install
 
 ### Manually
-We recommend installing Kongfig globally
+We recommend installing Qongfig globally
 
 ```
-npm install -g kongfig
+npm install -g qongfig
 ```
 
 ### Puppet

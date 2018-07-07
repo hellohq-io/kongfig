@@ -2,6 +2,8 @@ import createRouter from './router';
 import requester from './requester';
 import { parseVersion } from './utils.js'
 
+var sleep = require('sleep');
+
 let pluginSchemasCache;
 let kongVersionCache;
 let resultsCache = {};
@@ -83,14 +85,14 @@ function getPluginScheme(plugin, schemaRoute) {
 function getPaginatedJson(uri) {
     return requester.get(uri)
     .then(response => {
-      if (!response.ok) {
-          const error = new Error(`${uri}: ${response.status} ${response.statusText}`);
-          error.response = response;
+        if (!response.ok) {
+            const error = new Error(`${uri}: ${response.status} ${response.statusText}`);
+            error.response = response;
 
-          throw error;
-      }
+            throw error;
+        }
 
-      return response;
+        return response;
     })
     .then(r => r.json())
     .then(json => {
@@ -110,6 +112,7 @@ function getPaginatedJson(uri) {
             return json.data;
         }
 
+        sleep.msleep(100);
         return getPaginatedJson(json.next).then(data => json.data.concat(data));
     });
 }
