@@ -1,4 +1,3 @@
 #!/usr/bin/env node
-
-require("babel-polyfill");
-require('../lib/cli-apply.js');
+require('babel-polyfill')
+require('../lib/cli-apply.js')
