@@ -15,7 +15,7 @@ export const addCertificateSNI = (ssl_certificate_id, name) => ({
     type: 'add-certificate-sni',
     endpoint: { name: 'certificate-snis' },
     method: 'POST',
-    body: { name, ssl_certificate_id },
+    body: { name, certificate : { id: ssl_certificate_id } },
 });
 
 export const removeCertificateSNI = sniName => ({

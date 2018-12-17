@@ -50,7 +50,9 @@ Array [
     "params": Object {
       "body": Object {
         "name": "example.com",
-        "ssl_certificate_id": "2b47ba9b-761a-492d-9a0c-000000000001",
+        "certificate": {
+          "id": "2b47ba9b-761a-492d-9a0c-000000000001"
+        }
       },
       "endpoint": Object {
         "name": "certificate-snis",
@@ -65,13 +67,17 @@ Array [
     "content": Object {
       "created_at": "___created_at___",
       "name": "example.com",
-      "ssl_certificate_id": "2b47ba9b-761a-492d-9a0c-000000000001",
+      "certificate": {
+        "id": "2b47ba9b-761a-492d-9a0c-000000000001"
+      }
     },
     "ok": true,
     "params": Object {
       "body": Object {
         "name": "example.com",
-        "ssl_certificate_id": "2b47ba9b-761a-492d-9a0c-000000000001",
+        "certificate": {
+          "id": "2b47ba9b-761a-492d-9a0c-000000000001"
+        }
       },
       "endpoint": Object {
         "name": "certificate-snis",
@@ -88,7 +94,9 @@ Array [
     "params": Object {
       "body": Object {
         "name": "www.example.com",
-        "ssl_certificate_id": "2b47ba9b-761a-492d-9a0c-000000000001",
+        "certificate": {
+          "id": "2b47ba9b-761a-492d-9a0c-000000000001"
+        }
       },
       "endpoint": Object {
         "name": "certificate-snis",
@@ -103,13 +111,17 @@ Array [
     "content": Object {
       "created_at": "___created_at___",
       "name": "www.example.com",
-      "ssl_certificate_id": "2b47ba9b-761a-492d-9a0c-000000000001",
+      "certificate": {
+        "id": "2b47ba9b-761a-492d-9a0c-000000000001"
+      }
     },
     "ok": true,
     "params": Object {
       "body": Object {
         "name": "www.example.com",
-        "ssl_certificate_id": "2b47ba9b-761a-492d-9a0c-000000000001",
+        "certificate": {
+          "id": "2b47ba9b-761a-492d-9a0c-000000000001"
+        }
       },
       "endpoint": Object {
         "name": "certificate-snis",
