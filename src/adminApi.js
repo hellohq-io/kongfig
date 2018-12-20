@@ -2,8 +2,6 @@ import createRouter from './router';
 import requester from './requester';
 import { parseVersion } from './utils.js'
 
-var sleep = require('sleep');
-
 let pluginSchemasCache;
 let kongVersionCache;
 let resultsCache = {};
@@ -95,7 +93,7 @@ function getPaginatedJson(uri) {
         return response;
     })
     .then(r => r.json())
-    .then(json => {
+    .then(async json => {
         if (!json.hasOwnProperty('data')) return json;
         if (!json.hasOwnProperty('next')) {
             if (Object.keys(json.data).length === 0 && json.data.constructor === Object) {
@@ -112,8 +110,9 @@ function getPaginatedJson(uri) {
             return json.data;
         }
 
-        sleep.msleep(100);
-        return getPaginatedJson(json.next).then(data => json.data.concat(data));
+        await new Promise(resolve => setTimeout(resolve, 100));
+        const paginatedData = await getPaginatedJson(json.next).then(data => json.data.concat(data));
+        return paginatedData;
     });
 }
 
